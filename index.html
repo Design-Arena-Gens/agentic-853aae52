@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Overlay 3x3 Selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Overlay 3x3 Selector</div>
+      <button id="startBtn" class="btn">Start overlay</button>
+    </header>
+
+    <main class="content">
+      <p>Click "Start overlay", then drag to draw a region. On release, it snaps to the nearest of 9 grid cells.</p>
+    </main>
+
+    <div id="overlay" class="overlay hidden" aria-hidden="true">
+      <div class="grid-lines">
+        <div class="v v1"></div>
+        <div class="v v2"></div>
+        <div class="h h1"></div>
+        <div class="h h2"></div>
+      </div>
+      <div id="selection" class="selection" hidden></div>
+      <div class="hint">Esc to cancel</div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

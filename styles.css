@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #0f172a; background: #f8fafc; }
+
+.topbar { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: white; border-bottom: 1px solid rgba(15, 23, 42, 0.08); }
+.brand { font-weight: 600; }
+.btn { padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(15, 23, 42, 0.15); background: #0ea5e9; color: white; cursor: pointer; box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
+.btn:hover { background: #0284c7; }
+
+.content { max-width: 800px; margin: 48px auto; padding: 0 16px; }
+
+.overlay { position: fixed; inset: 0; background: rgba(2, 6, 23, 0.55); cursor: crosshair; z-index: 9999; }
+.hidden { display: none; }
+
+.grid-lines { position: absolute; inset: 0; }
+.grid-lines .v, .grid-lines .h { position: absolute; background: rgba(255, 255, 255, 0.25); }
+.grid-lines .v { width: 1px; top: 0; bottom: 0; }
+.grid-lines .v1 { left: calc(100% / 3); }
+.grid-lines .v2 { left: calc(200% / 3); }
+.grid-lines .h { height: 1px; left: 0; right: 0; }
+.grid-lines .h1 { top: calc(100% / 3); }
+.grid-lines .h2 { top: calc(200% / 3); }
+
+.selection { position: absolute; border: 2px solid #38bdf8; background: rgba(56, 189, 248, 0.15); border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+
+.hint { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); color: rgba(255,255,255,0.8); font-size: 14px; padding: 8px 12px; background: rgba(2,6,23,0.6); border: 1px solid rgba(255,255,255,0.15); border-radius: 999px; }
